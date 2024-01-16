@@ -12,7 +12,7 @@ const profilePage = async () => {
     const userId = sessionClaims?.userId as string;
 
     const organizedEvents = await getEventsByUser({userId,
-      page: "1",
+      page: 1,
     });
 
   return (
