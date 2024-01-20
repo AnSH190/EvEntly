@@ -102,11 +102,11 @@ const EventDetails = async ({
         <Collections
           data={relatedEvents?.data}
           emptyTitle="No events found"
-          emptyStateSubtest="Come back Later"
+          emptyStateSubtext="Come back Later"
           collectionType="All_Events"
-          limit={6}
-          page={1}
-          totalPage={2}
+          limit={3}
+          page={searchParams.page as string}
+          totalPages={relatedEvents?.totalPages}
         />
       </section>
     </>
