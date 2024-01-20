@@ -6,7 +6,7 @@ import Pagination from "./Pagination";
 type CollectionProps = {
   data: IEvent[];
   emptyTitle: string;
-  emptyStateSubtext: string;
+  emptyStateSubtext?: string;
   limit: number;
   page: number | string;
   totalPages?: number;
